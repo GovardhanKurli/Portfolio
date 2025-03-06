@@ -14,10 +14,10 @@ body {
 
 header {
     background-color: #7659E5;
-    /* background-color: #18230F; */
+   
     color: white;
     padding: 15px 0;
-    /* max-width: 1200px; */
+position: static;
 }
 
 nav {
@@ -61,8 +61,16 @@ nav {
 }
 
 .hero-content h2 {
-    font-size: 50px;
-}
+    font-size: 40px;
+    text-align: left;
+
+  }
+  /* .name-content{
+    font-size: 30px !important;
+    text-align: left;
+    
+    margin-bottom: 0px !important;
+  } */
 
 .hero-content p {
     font-size: 20px;
@@ -127,8 +135,8 @@ h2 {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
-    max-width: 1200px;
-    justify-content: center;
+    max-width: 1000px;
+    justify-content: flex-end;
     
 }
 
@@ -137,7 +145,7 @@ h2 {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 4px 4px 6px 6px rgba(0, 0, 0, 0.1);
-    width: 150vh;
+    /* width: 150vh; */
 
 
 }
@@ -209,3 +217,60 @@ footer {
     color: white;
    
 } */
+
+.aside-tag {
+    width: 60vh;
+    display: flex;
+    height: 60vhpx;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }
+  .project1-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+  }
+  .langague-list{
+    margin: 3px solid red;
+    background-color:#444867;
+    font-size: large;
+    padding: 3px;
+    border-radius: 5px;
+    list-style: none;
+  }
+ 
+  @media screen and (min-width: 768px) {
+     
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  
+  #typing-effect {
+    font-size: 3rem;  /* Adjust the size as per your design */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Hide the text initially */
+    white-space: nowrap; /* Prevent line breaks */
+    border-right: 3px solid #333; 
+    width: 0; 
+    animation: typing 5s steps(30) 1s forwards, blink 0.75s step-end infinite; 
+  }
+  
+  /* Blinking cursor effect */
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+    
+  }

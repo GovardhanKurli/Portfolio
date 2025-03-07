@@ -242,7 +242,10 @@ footer {
     border-radius: 5px;
     list-style: none;
   }
+
+
  
+  /* Responsive design */
   @media screen and (min-width: 768px) {
      
 @keyframes typing {
@@ -255,6 +258,7 @@ footer {
   }
   
   
+  /* Typing effect */
   #typing-effect {
     font-size: 3rem;  /* Adjust the size as per your design */
     font-family: 'Arial', sans-serif;

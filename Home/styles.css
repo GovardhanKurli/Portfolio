@@ -55,10 +55,13 @@ nav {
 #hero {
     background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk2MC1uaW5nLTMwLmpwZw.jpg') no-repeat center center/cover;
     color: white;
-    padding: 100px 20px;
+    padding: 90px 20px;
+    border-radius: 0% 0.5% 15% 2%;
     text-align: center;
     display: flex;
+    margin-top: 10px;
 }
+
 
 .hero-content h2 {
     font-size: 40px;
@@ -212,6 +215,10 @@ footer {
 
     .project-grid {
         grid-template-columns: 1fr;
+    }
+    #hero{
+        display: flex;
+        flex-direction: column;
     }
 }
 

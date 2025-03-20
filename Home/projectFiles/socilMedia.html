@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Social Media App</title>
+</head>
+
+<body class=" p-4  text-light" style="font-family: Arial, sans-serif; background-color: #31344F;">
+
+    <!-- Header Section -->
+    <header>
+        <h2><a href="https://github.com/GovardhanKurli/Social-Media-APP" class="link-underline-dark">SocialConnect</a></h2>
+    </header>
+    
+    <div class="container d-flex justify-content-between p-0">
+        <div class="flex-fill p-2">
+            <p class="lead mt-4">
+                SocialConnect is a full-stack web application enabling users to connect, share posts, and engage with a dynamic social community. The platform is designed to provide a seamless and interactive experience for all users.
+            </p>
+            <p>
+                Engineered core features including:
+                <ul>
+                    <li>User authentication with secure login and registration.</li>
+                    <li>Real-time feed updates for seamless social interaction.</li>
+                    <li>Token-based authentication (JWT) to ensure data integrity and protect user sessions.</li>
+                    <li>A robust backend built with Node.js and MongoDB for optimal data management.</li>
+                    <li>An adaptive and dynamic user interface built with React.js for an engaging user experience.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="flex-fill">
+            <img src="../image/SocialMedia.png" alt="Social Media Dashboard" class="img-fluid rounded-2">
+        </div>
+    </div>
+
+    <!-- Key Features Section -->
+    <div class="content pt-5">
+        <h3>Key Features of SocialConnect</h3>
+        
+        <ul id="featuresList" style="list-style-type:none;">
+            <li class="m-3">
+                1. User Authentication
+                <ul>
+                    <li>Secure login and registration with password hashing.</li>
+                    <li>JWT (JSON Web Token) for session management.</li>
+                    <li>Role-based access for users and admins.</li>
+                </ul>
+            </li>
+            <li class="m-2">2. Real-time Feed Updates
+                <ul>
+                    <li>Live feed that updates automatically as new posts appear.</li>
+                    <li>Real-time notification system for likes, comments, and messages.</li>
+                    <li>End-to-end encryption for secure data exchange.</li>
+                </ul>
+            </li>
+            <li class="m-2">3. Dynamic User Interface
+                <ul>
+                    <li>Responsive UI using React.js for a smooth, dynamic user experience.</li>
+                    <li>Interactive components such as like buttons, comment sections, and sharing options.</li>
+                    <li>Customizable user profile with images and personal details.</li>
+                </ul>
+            </li>
+            <li class="m-2">4. Post Sharing & Engagement
+                <ul>
+                    <li>Users can create and share posts with text, images, and videos.</li>
+                    <li>Like, comment, and share functionality to boost engagement.</li>
+                    <li>Post feeds are personalized for each user based on their interactions and interests.</li>
+                </ul>
+            </li>
+            <li class="m-2">5. Backend Integration
+                <ul>
+                    <li>Built with Node.js and Express.js for handling requests and managing routes.</li>
+                    <li>MongoDB as the database for storing user data, posts, and comments.</li>
+                    <li>Efficient data queries and response times with MongoDB's document-based structure.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <button id="toggleButton" class="btn btn-primary">Show More</button>
+    </div>
+
+    <!-- Technologies Used Section -->
+    <div class="container mt-4">
+        <h3>Technologies Used</h3>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">React.js</li>
+            <li class="list-group-item">Node.js</li>
+            <li class="list-group-item">Express.js</li>
+            <li class="list-group-item">MongoDB</li>
+            <li class="list-group-item">JWT (JSON Web Tokens)</li>
+            <li class="list-group-item">Tailwindcss</li>
+            <!-- <li class="list-group-item">Socket.IO</li> -->
+        </ul>
+    </div>
+
+    <style>
+        #featuresList li ul {
+            display: none;
+        }
+    </style>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            const nestedLists = document.querySelectorAll('#featuresList li ul');
+            const button = document.getElementById('toggleButton');
+
+            // Toggle visibility for all nested lists
+            nestedLists.forEach(function(ul) {
+                ul.style.display = (ul.style.display === 'none' || ul.style.display === '') ? 'block' : 'none';
+            });
+
+            // Change the button text based on the current state
+            if (button.textContent === 'Show More') {
+                button.textContent = 'Show Less';
+            } else {
+                button.textContent = 'Show More';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

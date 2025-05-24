@@ -239,6 +239,7 @@ footer {
     margin: 0 auto;
     display: block;
     margin-bottom: 20px;
+    /* filter: drop-shadow(2px 1px 20px rgb(220, 92, 45));  */
 }
 
 /* .navbar{

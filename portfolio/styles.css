@@ -45,7 +45,40 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
+     transition: all 0.3s ease-in-out;
 }
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive: hide nav links, show menu icon */
+/* Responsive: hide nav links, show menu icon */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
 
 .nav-links li {
     margin-left: 20px;
